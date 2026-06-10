@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 3vh;
+    
+}
+
+a, #header-button {   
+    margin-left: 2vw;
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: #989D9C;
+}
+
+#header-button {
+    margin-top: auto;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 50px;
+    background-color: #665AE1;
+    color: #FFFFFF
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+section {
+    margin-left: 5vw;
+}
+
+img {
+    height: 500px;
+    width: 568px;
+    margin-top: 10vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 6vw;
+    line-height: 122px;
+    color: #515151;
+}
+h2 {
+    font-weight: 500;
+    font-size: 3.65vw;
+    line-height: 4.2vw;
+    color: #515151;
+}
+
+p {
+    margin-top: 31px;
+    font-size: 1.2vw;
+    width: 515px;
+    height: 87px;
+    color: #848484;
+}
+
+#Exp-button {
+    width: 239px;
+    height: 4vw;
+    margin-top: 3.7vw;
+    padding: 0.5vw 1vw;
+    font-weight: 600;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 50px;
+    color: #000000;
+    background-color: #ADFF00;
+}
+
+@media (max-width: 1024px) {
+    header {
+    display: none;
+    }
+    img {
+    height: 317px;
+    width: 354px;
+    margin-top: 10vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    }
+    p {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    h1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 122px;
+    color: #515151;
+    }
+    h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #515151;
+    }
+    #Exp-button {
+    width: 239px;
+    height: 66px;
+    margin-top: 40px;
+    padding: 0.5vw 1vw;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    color: #000000;
+    background-color: #ADFF00;
+    }
+}
