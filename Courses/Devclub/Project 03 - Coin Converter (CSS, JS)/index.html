@@ -15,18 +15,18 @@
 
         <label>
             <p class="texto-pequeno">Converter <b>de</b></p>
-            <select>
+            <select id="currency-select-base">
                 <option>R$ Real Brasileiro</option>
             </select>
         </label>
 
         <label>
             <p class="texto-pequeno">Converter <b>para</b></p>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
-                <option>£ Libra</option>
-                <option>Bitcoin</option>
+            <select id="currency-select-cvt">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <!-- <option value="bitcoin">Bitcoin</option> -->
             </select>
         </label>
 
@@ -41,15 +41,15 @@
             <div class="currency-box">
                 <img src="./img/Coins/BRL.png" alt="Coin-To-Convert">
                 <p class="currency">Real</p>
-                <p class="currency-value">R$ 0,00</p>
+                <p id="currency-value-to-convert">R$ 0,00</p>
             </div>
 
             <img src="./img/Down-Arrow.png" alt="Down-Arrow" id="arrow-img">
 
             <div class="currency-box">
-                <img src="./img/Coins/USD.png" alt="Converted-Coin">
-                <p class="currency">Dólar</p>
-                <p class="currency-value">R$ 0,00</p>
+                <img src="./img/Coins/USD.png" alt="Converted-Coin" id="img-cc">
+                <p id="currency-name">Dólar Americano</p>
+                <p id="currency-value-converted">R$ 0,00</p>
             </div>
         </section>
 
