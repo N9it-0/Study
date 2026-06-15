@@ -7,6 +7,7 @@ Always changing (I hope) so it may get a bit messy, I'll try my best so it stays
   - Re-making some projects because my HD corrupted.
 
 ### Previously:
+- Finished the sixth project (JS), DevSorteio, made in the DevClub Course. (15/june/26)
 - Finished the fifth project (JS), Devclub Burger, made in the DevClub Course. (15/june/26)
 - Finished the fourth project (JS), Rock-Paper-Scissors, made in the DevClub Course. (15/june/26)
 - Finished the third project (JS introduction), Coin Converter, made in the DevCLub Course. (15/june/26)
