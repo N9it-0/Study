@@ -7,4 +7,5 @@ Always changing (I hope) so it may get a bit messy, I'll try my best so it stays
   - Re-making some projects because my HD corrupted.
 
 ### Previously:
+- Finished the third project (JS introduction) I made in the DevCLub Course. (15/june/26)
 - First Commited Two projects (Pure HTML/CSS) I made in the Devclub Course. (09/june/26)
