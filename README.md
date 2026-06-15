@@ -7,6 +7,7 @@ Always changing (I hope) so it may get a bit messy, I'll try my best so it stays
   - Re-making some projects because my HD corrupted.
 
 ### Previously:
-- Finished the fourth project (JS) I made in the DevClub Course. (15/june/26)
-- Finished the third project (JS introduction) I made in the DevCLub Course. (15/june/26)
-- First Commited Two projects (Pure HTML/CSS) I made in the Devclub Course. (09/june/26)
+- Finished the fifth project (JS), Devclub Burger, made in the DevClub Course. (15/june/26)
+- Finished the fourth project (JS), Rock-Paper-Scissors, made in the DevClub Course. (15/june/26)
+- Finished the third project (JS introduction), Coin Converter, made in the DevCLub Course. (15/june/26)
+- First Commited Two projects (Pure HTML/CSS), We Care & Wide Coverage Location, made in the Devclub Course. (09/june/26)

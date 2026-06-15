@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(228, 209, 184);
 }
 
 .container-buttons {
@@ -42,9 +42,10 @@ ul {
 }
 
 li {
-    border: 2px solid #8133ff;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 5px;
+    background-color: rgb(218, 161, 97);
 }
 
 img {
@@ -53,10 +54,11 @@ img {
 }
 
 p {
-    color: #ffffff;
+    color: #000000;
+    font-weight: 600;
 }
 
 .item-price {
     font-weight: bold;
-    color: #79cb15;
+    color: #60af00;
 }

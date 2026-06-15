@@ -37,7 +37,8 @@ function sumAllItems() {
     const totalValue = menuOptions.reduce((acc, curr) => acc + curr.price, 0)
     list.innerHTML = `
         <li>
-            <p>O Valor Total Dos Itens É: <br> ${formatCoin(totalValue)}</p>
+            <img src="./Img/all-burgers.png">
+            <p>O Valor Total De Todos Os Itens É: <br> ${formatCoin(totalValue)}</p>
         </li>
         `
 }
