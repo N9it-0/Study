@@ -1,0 +1,61 @@
+Display Flex makes the job easier.
+There are two main functions or smth inside it:
+    Flex Container
+    Flex Itens
+
+////Within flex container////
+flex-direction:
+ Makes things go in a certain direction.
+    There are Four Flex Directions:
+        row - dafault flex direction, makes things go in a row.
+        row-reverse - makes things go in a row, reverses the itens positions in a row.
+        column - makes things form a column.
+        column-reverse - makes things form a column, reverses the itens positions in a column.
+
+flex-wrap:
+ Breaks a the line when width is exceded.
+    There are three wrap options:
+        nowrap - default value, doesn't break the line.
+        wrap - breaks the line.
+        wrap-reverse - breaks the line, puts whats on the top to the bottom and vice versa.
+
+flex-flow:
+Quick way to put flex-wrap and flex-direction at once.
+    there are quite a few options, all of them taken from the previous ones.
+
+justify-content:
+MAIN AXIS - the main axis.
+CROSS AXIS - the secondary axis.
+They're based on the flex-direction. row = x || column = y
+Ex: A flex-end will put the object at the right of the page if it's on a row.
+But will put it at the bottom of the page if it's on a column.
+
+align-items:
+Similar to justify-content, but based on the secondary axis.
+
+align-content:
+Similar to align-itens, but instead of spreading the itens out, it groups everybody then aligns.
+
+gap:
+Makes a gap between the itens.
+
+////Within flex itens////
+flex-basis:
+Serves to delimitate (nice word) the base of the itens.
+
+flex-grow:
+It's the capacity of an item to grow in a vacant space.
+
+flex-shrink:
+Controls how much the item will shrink
+
+flex:
+Much like flex-flow, but for the 3 above. 
+EX: flex: flex-basis, flex-grow, flex-shrink;
+
+order:
+Serves to change the order of the items.
+The itens will have to be changed individualy.
+
+align-self:
+Similar to align items, but for only one item.

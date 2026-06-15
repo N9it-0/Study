@@ -12,19 +12,25 @@ body {
 }
 
 #site-logo {
-    display: block;
+    display: flex;
     margin: 25px;
     width: 200px;
     height: 200px;
     justify-self: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main {
     width: 375px;
-    margin: 0 auto;
     padding: 44px 24px;
     background: #F4F4F4;
-    border-radius: 30px;
+    border-radius: 20px;
+    align-content: center;
 }
 
 label {
@@ -62,6 +68,7 @@ button {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 button:hover {
@@ -75,8 +82,8 @@ button:active {
 section {
     border: 2px solid #8A51FC;
     border-radius: 20px;
-    margin-top: 36px;
-    padding: 12px;
+    gap: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
