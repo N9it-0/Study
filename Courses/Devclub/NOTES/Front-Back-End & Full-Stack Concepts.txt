@@ -1,0 +1,7 @@
+Front-End: All the things that are run on client side, on a local pc.
+Ex:. Every file that is downloaded by the browser, such as index.HTML
+Back-End: All the things that are run on a server.
+Ex:. Password files
+
+They comunicate in requisitions and response. Front-End makes requisitions,
+Back-End gives responses based on their data.
