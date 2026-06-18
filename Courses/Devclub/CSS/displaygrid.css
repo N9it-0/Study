@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.block {
+    color: white;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: rgb(51, 68, 104);
+    grid-column: 1/4;
+    order: -1;
+}
+main {
+    background-color: rgb(40, 131, 70);
+}
+aside {
+    background-color: rgb(110, 34, 72);
+}
+footer {
+    background-color: rgb(68, 144, 150);
+    grid-column: 1/4;
+}
+nav {
+    background-color: rgb(189, 12, 12);
+    order: -1;
+}

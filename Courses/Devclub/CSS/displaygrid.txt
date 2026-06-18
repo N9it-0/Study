@@ -1,0 +1,33 @@
+////Container////
+
+grid-template-columns:
+Makes grid columns, kinda like puting <br> after an item, but more organized.
+It's applied on the container.
+
+grid-template-rows:
+Same thing as the former, but on lines.
+
+grid-gap:
+Makes a gap between the blocks.
+ex:grid-row-gap // grid-column-gap // grid gap
+(The last one applies both column and row gap.)
+
+grid-auto-rows:
+Kinda like grid-template-rows, but automatic.
+ex: grid rows can have different sizes automatically depending on content inside.
+
+grid-template-areas:
+Can do grid-column & row stuff with less meddling.
+
+////Items////
+
+grid-column:
+changes a single grid item.
+ex: grid-column: 1/2; makes the object ocuppy two spaces in x direction.
+
+grid-row:
+changes a single grid item.
+ex: grid-column: 1/2; makes the object ocuppy two spaces in y direction.
+
+grid-area:
+Simply a vassal of grid-template-areas.
