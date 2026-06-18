@@ -31,3 +31,7 @@ ex: grid-column: 1/2; makes the object ocuppy two spaces in y direction.
 
 grid-area:
 Simply a vassal of grid-template-areas.
+
+////Align////
+Everything that display-flex has is here too.
+No need to re-write Everything.
