@@ -1,0 +1,41 @@
+To iniciate the server: node jsfilename.js
+To end the server: ctrl + c
+
+http Methods:
+get -> list
+post -> create
+put -> edit many
+patch -> edit ONE
+delete -> deletar
+
+Request:
+    -Can do three types
+query Params (get)
+  -  search
+  -  ex:. server.com/users?variableone=bahia&variabletwo=salvador
+    -  question mark means it's an query params
+
+Route Params (get / put / delete)
+  -  search, delete, or edit something specific.
+  -  ex:. server.com/users/22
+
+Body Params (Post and Put)
+  -  serves to send a bunch of information at once.
+  -  ex:. {"name": "Rodolfo", "id": 22}
+
+HTTP CODES:
+- 2xx - success
+    - 200 - successful request
+    - 201 - created - successful request
+- 4xx - client error
+    - 400 - bad request
+    - 401 - unauthorized
+    - 403 - forbidden
+    - 404 - not found
+- 5xx - server error
+    - 500 - internal server error
+    - 502 - bad gateway
+THERE'S WAY MORE BUT THESE ARE WHAT ARE MOST COMMON.
+
+JSON:
+A way for back and front end to communicate.
