@@ -18,14 +18,24 @@ app.get('/users/', async (req, res) => {
 })
 
 app.post('/users', async (req, res) => {
+    try {
     const user = await prisma.user.create({
         data: {
             email: req.body.email,
             age: req.body.age,
             name: req.body.name
         }
-    })
-    res.status(201).json({ user })
+    },
+    //if(user.data.age < 18) {throw new Error("Underaged Users NOT allowed.")} just to show that you can make custom errors
+)
+    return res.status(201).json({ user })
+    } catch(error) {
+    return res.status(500).json({ error:"internal server error" })
+    } // Try & Catch ==> used together, used to catch errors.
+    finally {
+        console.log("Finished.")
+    } //As Try's finished executed it is executed as well.
+    
 })
 
 app.put('/users/:id', async (req, res) => {
@@ -48,7 +58,7 @@ app.delete('/users/:id', async (req, res) => {
             id: req.params.id
         }
     })
-    res.status(200).json({ message: "Usuário Deletado Com Sucesso!"})
+    res.status(200).json({ message: "Usuário Deletado Com Sucesso!" })
 })
 
 app.listen(3000)
