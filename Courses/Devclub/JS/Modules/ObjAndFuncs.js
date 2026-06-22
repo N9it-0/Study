@@ -16,4 +16,5 @@ const person = {
     Married: true
 }
 
-module.exports = {sum, mult, div, person}
+//module.exports = {sum, mult, div, person}
+this.person = person
