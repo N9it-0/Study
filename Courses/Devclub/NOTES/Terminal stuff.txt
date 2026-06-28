@@ -1,0 +1,7 @@
+ls --> lists everything in that folder
+clear --> clears the terminal
+cd --> enter a folder
+cd .. --> exit a folder
+mkdir "name" --> creates a folder
+rmdir "name" --> deletes a folder
+code "name" --> opens a folder in vscode

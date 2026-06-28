@@ -1,0 +1,4 @@
+React is an JavaScript library, created by facebook.
+Used to create wweb interfaces.
+React ==> Website creation
+React Native ==> Movile apps
