@@ -4,9 +4,10 @@ Always changing so it may get a bit messy, I'll try my best so it stays organize
 
 ### Currently:
 - Working my way through a full-stack development course. (Devclub)
-  - Going through devclub's NodeJS Module.
+  - Going through devclub's React Module.
 
 ### Previously:
+- Finished DevClub's NodeJS Module
 - Finished re-making the projects I've lost in a HD corruption.
 - Finished the sixth project (JS), DevSorteio, made in the DevClub Course. (15/june/26)
 - Finished the fifth project (JS), Devclub Burger, made in the DevClub Course. (15/june/26)
