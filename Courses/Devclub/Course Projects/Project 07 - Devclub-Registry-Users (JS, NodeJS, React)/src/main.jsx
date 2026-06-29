@@ -1,10 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
+import { GlobalStyles } from './styles/globalstyles.js'
+// import './index.css'
+import Home from './App.jsx'
+//arquive that'll inicialize the app
 createRoot(document.getElementById('root')).render(
+  //REACT components AlWAYS start with an uppercase letter, 
+  //So as to differenciate com a html tag.
   <StrictMode>
-    <App />
+    <GlobalStyles />
+    <Home />
   </StrictMode>,
 )

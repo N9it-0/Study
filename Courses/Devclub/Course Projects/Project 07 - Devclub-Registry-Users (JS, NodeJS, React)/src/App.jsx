@@ -1,122 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button, InputLabel } from './styles.js'
+import UsersImage from './assets/users.png'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function Home() {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    // in JSX you must always wrap all elements in a single tag.
+    // this, bellow is a fragment, used for this purpose.
+    <Container>
+      <TopBackground>
+        <img src={UsersImage} />
+      </TopBackground>
 
-      <div className="ticks"></div>
+      <Form>
+        <Title>Cadastro de Usuário</Title>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <ContainerInputs>
+          <div>
+            <InputLabel>
+              Nome<span> *</span>
+            </InputLabel>
+            <Input type="text" placeholder='Nome do usuário' />
+          </div>
+          <div>
+            <InputLabel>
+              Idade<span> *</span>
+            </InputLabel>
+            <Input type="Number" placeholder='Idade do usuário' />
+          </div>
+        </ContainerInputs>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        <div style={{ width: '100%' }}>
+          <InputLabel>
+            E-mail<span> *</span>
+          </InputLabel>
+          <Input type="email" placeholder='E-mail do usuário' />
+        </div>
+
+        <Button>Cadastrar Usuário</Button>
+
+      </Form>
+
+
+
+    </Container>
+
   )
 }
 
-export default App
+export default Home
+/* 
+  export default --> ONE thing per page.
+  If I want to export more: "export function funcName()"
+*/
+
+/*
+  There are many ways to style stuff! (With styled-components library)
+  <h1 style={{color: 'red', fontSize: 30}}>aa</h1>
+  importing styles from styles.js
+  putting stuff like that h1 inside the container style stuff in the styles.js...
+*/
