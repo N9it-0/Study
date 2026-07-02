@@ -1,4 +1,4 @@
-import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button, InputLabel } from './styles.js'
+import { Title, Container, TopBackground, Form, ContainerInputs, Input, Button, InputLabel } from './pages/Login/styles.js'
 import UsersImage from './assets/users.png'
 
 
