@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { GlobalStyles } from './styles/globalstyles.js'
 // import './index.css'
-import Home from './App.jsx'
+import Home from './pages/Home'
 //arquive that'll inicialize the app
 createRoot(document.getElementById('root')).render(
   //REACT components AlWAYS start with an uppercase letter, 
