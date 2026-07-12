@@ -4,9 +4,11 @@
 // NEW WAY TO IMPORT
 import { PrismaClient } from './generated/prisma/client.js'
 import express from 'express'
+import cors from 'cors'
 
 const app = express()
 app.use(express.json()) //Needed so express knows we're dealing with json.
+app.use(cors())
 
 //const users = [] //Simulated Database
 const prisma = new PrismaClient()
