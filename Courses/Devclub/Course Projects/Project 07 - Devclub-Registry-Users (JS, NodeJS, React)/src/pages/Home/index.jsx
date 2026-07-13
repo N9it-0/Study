@@ -1,23 +1,25 @@
-import { useRef } from 'react' 
+import { useRef } from 'react'
 
-import { 
-  Title, 
-  Container, 
-  TopBackground, 
-  Form, 
-  ContainerInputs, 
-  Input, 
-  Button, 
-  InputLabel } from './styles.js'
-import UsersImage from '../../assets/users.png'
+import {
+  Title,
+  Container,
+  Form,
+  ContainerInputs,
+  Input,
+  InputLabel
+} from './styles.js'
+
+
 import api from '../../services/api.js'
+import Button from "../../components/Button"
+import TopBackground from '../../components/TopBackground'
 
 function Home() {
   const inputName = useRef()
   const inputAge = useRef()
   const inputEmail = useRef()
 
-  async function registerNewUser(){
+  async function registerNewUser() {
     const data = await api.post('/users', {
       email: inputEmail.current.value,
       age: parseInt(inputAge.current.value),
@@ -30,10 +32,8 @@ function Home() {
     // in JSX you must always wrap all elements in a single tag.
     // this, bellow is a fragment, used for this purpose.
     <Container>
-      <TopBackground>
-        <img src={UsersImage} />
-      </TopBackground>
 
+      <TopBackground />
       <Form>
         <Title>Cadastro de Usuário</Title>
 
@@ -42,13 +42,13 @@ function Home() {
             <InputLabel>
               Nome<span> *</span>
             </InputLabel>
-            <Input type="text" placeholder='Nome do usuário' ref={inputName}/>
+            <Input type="text" placeholder='Nome do usuário' ref={inputName} />
           </div>
           <div>
             <InputLabel>
               Idade<span> *</span>
             </InputLabel>
-            <Input type="Number" placeholder='Idade do usuário' ref={inputAge}/>
+            <Input type="Number" placeholder='Idade do usuário' ref={inputAge} />
           </div>
         </ContainerInputs>
 
@@ -56,17 +56,15 @@ function Home() {
           <InputLabel>
             E-mail<span> *</span>
           </InputLabel>
-          <Input type="email" placeholder='E-mail do usuário' ref={inputEmail}/>
+          <Input type="email" placeholder='E-mail do usuário' ref={inputEmail} />
         </div>
 
-        <Button type='button' onClick={registerNewUser}>Cadastrar Usuário</Button>
+        <Button type='button' onClick={registerNewUser} beako='kashira'>Cadastrar Usuário</Button>
 
       </Form>
 
-
-
+      <Button type='button'>Ver Lista de Usuários</Button>
     </Container>
-
   )
 }
 
